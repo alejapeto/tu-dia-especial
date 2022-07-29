@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💝 ALEJA feliz cumple amiga :D ❤</title>
+</head>
+<style type="text/css">
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(#3E8BFF, #42B4E9);
+}
+header img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: block;
+}
+header img:nth-child(1) {
+    z-index: 1;
+}
+header img:nth-child(2) {
+    z-index: 2;
+}
+header img:nth-child(3) {
+    z-index: 3;
+    margin-top: -3rem;
+}
+header img:nth-child(4) {
+    z-index: 4;
+    height: 100%;
+}
+.section-tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.section-photo {
+    display: block;
+    margin-top: -10rem;
+}
+.section-photo img.alepeto {
+    width: 100%;
+}
+
+.contenedor-fondo-animado {
+    z-index: 100;
+    display: block;
+    height: 100vh;
+    background: linear-gradient(#4c8dca, transparent);
+    color: #fff;
+    position: relative;
+}
+.seccion-contenido {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-contenido .contenido {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    z-index: 5;
+}
+.seccion-contenido .contenido h4 {
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+    font-family: Lucida Handwriting;
+}
+.seccion-contenido .contenido p {
+    font-style: italic;
+    font-size: 1.75rem;
+    margin-bottom: 3.5rem;
+    font-family: Gill Sans MT;
+}
+.seccion-contenido .contenido h4,
+.seccion-contenido .contenido p {
+    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+.seccion-contenido .contenido ul {
+    list-style: none;
+}
+.seccion-contenido .contenido ul a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2em;
+    padding: 15px;
+    border-radius: 12px;
+    transition: all ease-in 100ms;
+    transform: translateY(0)
+}
+.seccion-contenido .contenido ul a:hover {
+    transform: translateY(-.5rem);
+}
+.seccion-contenido .contenido li:nth-child(1) a {
+    border: 3px solid #E86BFF;
+}
+.seccion-contenido .contenido li:nth-child(2) a {
+    border: 3px solid #90BAFF;
+}
+.seccion-contenido .contenido li:nth-child(3) a {
+    border: 3px solid #FF5071;
+}
+.seccion-contenido .contenido ul li {
+    display: inline-block;
+}
+.seccion-contenido .contenido ul li + li {
+    margin-left: 2.5rem;
+}
+
+/* animacion */
+.animacion {
+    z-index: 1;
+}
+span.cuatro,
+span.dos,
+span.tres,
+span.uno {
+    border: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    animation: vuela 7s linear infinite normal both;
+}
+span.uno {
+    width: 100px;
+    height: 100px;
+    background-color: #E86BFF;
+    bottom: -100px;
+}
+span.dos {
+    width: 70px;
+    height: 70px;
+    background-color: #90BAFF;
+    bottom: -70px;
+}
+span.tres {
+    width: 50px;
+    height: 50px;
+    background-color: #FF5071;
+    bottom: -50px;
+}
+span.cuatro {
+    width: 20px;
+    height: 20px;
+    background-color: #67F3D4;
+    bottom: -20px;
+}
+@keyframes vuela {
+    from {
+        transform: rotate(0deg);
+        bottom: 0;
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    to {
+        transform: rotate(360deg);
+        bottom: calc(100% + 100px);
+        opacity: 0;
+    }
+}
+/* secuencia y orden */
+.animacion span:nth-child(1) {
+    left: 20%;
+    animation-delay: 3s;
+}
+.animacion span:nth-child(2) {
+    left: 50%;
+}
+.animacion span:nth-child(3) {
+    left: 35%;
+    animation-delay: 5s;
+}
+.animacion span:nth-child(4) {
+    left: 75%;
+    animation-delay: 1s;
+}
+.animacion span:nth-child(6) {
+    left: 85%;
+    animation-delay: 3s;
+}
+.animacion span:nth-child(7) {
+    left: 90%;
+    animation-delay: 5s;
+}
+.animacion span:nth-child(8) {
+    left: 65%;
+}
+.animacion span:nth-child(9) {
+    left: 60%;
+}
+.animacion span:nth-child(10) {
+    left: 75%;
+    animation-delay: 6s;
+}
+.animacion span:nth-child(11) {
+    left: 10%;
+}
+.animacion span:nth-child(12) {
+    left: 45%;
+    animation-delay: 3s;
+}
+
+.body-mensjae {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+}
+
+.mensaje {
+    display: block;
+    width: 250px;
+    position: relative;
+    min-height: 10px;
+    border: 3px dashed #fff;
+    padding: 1rem;
+    color: #fff;
+    background-color: rgba(114, 131, 173, .5);
+    font-size: 1.5rem;
+}
+.mensaje button {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    border: 3px solid #F280FF;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjS p {
+    border: 3px dashed #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.tarjS p > span {
+    background-color: rgba(250, 126, 255, .5);
+    display: block;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+span.tag {
+    display: inline-block;
+    padding: 5px 1rem;
+    border-radius: 2rem;
+    background-color: #ba98ff;
+}
+
+@media (max-width: 912px) {
+
+header img:nth-child(1) {
+    margin-top: 10rem;
+}
+header img:nth-child(2) {
+    margin-top: 5rem;
+}
+header img:nth-child(3) {
+    margin-top: 40rem;
+}
+header img:nth-child(4) {
+    z-index: 4;
+    height: 100%;
+}
+
+}
+
+@media (max-width: 820px) {
+
+header img:nth-child(1) {
+    margin-top: 10rem;
+}
+header img:nth-child(2) {
+    margin-top: 5rem;
+}
+header img:nth-child(3) {
+    margin-top: 35rem;
+}
+header img:nth-child(4) {
+    z-index: 4;
+    height: 100%;
+}
+
+}
+
+@media (max-width: 768px) {
+
+header img:nth-child(1) {
+    margin-top: 10rem;
+}
+header img:nth-child(2) {
+    margin-top: 5rem;
+}
+header img:nth-child(3) {
+    margin-top: 30rem;
+}
+header img:nth-child(4) {
+    z-index: 4;
+    height: 100%;
+}
+.img-tarj {
+    width: 320px
+}
+
+}
+
+@media (max-width: 480px) {
+
+header img:nth-child(3) {
+    margin-top: 25rem;
+}
+.section-tarjeta {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.body-mensjae {
+    align-items: flex-start;
+    padding-top: 5rem
+}
+
+
+.tarjS p {
+    border: 3px dashed #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.tarjS p > span {
+    font-size: 1rem
+}
+span.tag {
+    display: inline-block;
+    padding: 5px 1rem;
+    border-radius: 2rem;
+    background-color: #ba98ff;
+}
+.img-tarj {
+    width: 250px
+}
+
+.section-photo {
+    margin-top: 0;
+}
+
+}
+
+
+
+
+@media (max-width: 414px) {
+header img:nth-child(3) {
+    margin-top: 32rem;
+}
+
+}
+
+
+
+@media (max-width: 412px) {
+header img:nth-child(3) {
+    margin-top: 32rem;
+}
+
+}
+
+
+
+
+@media (max-width: 393px) {
+header img:nth-child(3) {
+    margin-top: 30rem;
+}
+
+}
+
+
+
+@media (max-width: 360px) {
+header img:nth-child(3) {
+    margin-top: 25rem;
+}
+
+}
+
+
+
+@media (max-width: 375px) {
+header img:nth-child(3) {
+    margin-top: 21rem;
+}
+
+}
+
+
+
+@media (max-width: 360px) {
+header img:nth-child(3) {
+    margin-top: 25rem;
+}
+header img:nth-child(4) {
+    z-index: 4;
+    height: 100%;
+}
+
+}
+</style>
+<body>
+    <header>
+        <img src="img/corazones.png" alt="">
+        <img src="img/nuve.png" alt="">
+        <img src="img/koala.png" alt="">
+        <img src="img/rio.png" alt="">
+        <div class="body-mensjae">
+            <div class="mensaje">
+                <button id="ver-mensaje">Click</button>
+                <div id="mensaje"></div>
+            </div>
+        </div>
+    </header>
+<section class="contenedor-fondo-animado">
+    <div class="animacion">
+        <!--  -->
+        <span class="uno"></span>
+        <span class="dos"></span>
+        <span class="tres"></span>
+        <span class="cuatro"></span>
+        <!--  -->
+        <span class="uno"></span>
+        <span class="dos"></span>
+        <span class="tres"></span>
+        <span class="cuatro"></span>
+        <!--  -->
+        <span class="uno"></span>
+        <span class="dos"></span>
+        <span class="tres"></span>
+        <span class="cuatro"></span>
+    </div>
+    <div class="seccion-contenido">
+        <div class="contenido">
+            <img class="img-tarj" src="img/birthday.png" alt="">
+            <div class="tarjS">
+                <P><span>Me has dado motivos para celebrar la vida de una manera memorable. Que todos tus sueños se hagan realidad en este día especial.<br>Eres <span class="tag">hermosa</span> <span class="tag">inteligente</span> <span class="tag">amigable</span> <span class="tag">Tierna</span> <span class="tag">peligrosa :'V</span> <span class="tag">facil de Enojar</span> <span class="tag">alegre</span> <span class="tag">con metas</span>. y muhcas cualidades que son de <strong>TI</strong> que te hacen especial <3</P>
+                <P><span>Poder compartir contigo estos momentos tan especiales son los que hacen que realmente valga la pena la vida.</span></P>
+            </div>
+        </div>
+    </div>
+</section>
+    <div class="section-photo">
+        <img class="alepeto" src="img/ale-cumple-2022.png" alt="">
+    </div>
+<script type="text/javascript">
+let imgs = document.querySelectorAll("header img");
+window.addEventListener("scroll", ()=> {
+    imgs.forEach(img => {
+        let scrollY = window.scrollY;
+        imgs[0].style.top = -scrollY * -0.6 + 'px';
+        imgs[1].style.top = -scrollY * -0.1 + 'px';
+        imgs[2].style.top = -scrollY * -0.4 + 'px';
+    })
+})
+let watchMessage = document.querySelector("#ver-mensaje");
+watchMessage.addEventListener("click", () => {
+    maquinaescribir({
+        id: '#mensaje',
+        texto: '“Estas palabras no pueden sustituir un abrazo, pero son mi manera de hacerte llegar mis mejores deseos ¡Feliz Cumpleaños ALEJANDRA!”'
+    })
+})
+function maquinaescribir(obj) {
+    let textoarr = Array.from(obj.texto);
+    let id = document.querySelector(obj.id);
+    let nuevotexto = '';
+    let i = 0;
+    let max = textoarr.length;
+    let textointerval = setInterval(() => {
+        i++;
+        nuevotexto += textoarr[i - 1];
+        id.innerText = nuevotexto;
+        if (i === max) {
+            clearInterval(textointerval);
+            textointerval = null;
+            id.classList.remove('cursor-parpadeante');
+        }
+    }, 75)
+}
+</script>
+</body>
+</html>
